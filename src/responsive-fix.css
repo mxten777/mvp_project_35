@@ -1,0 +1,93 @@
+/* 모바일 우선 반응형 스타일 */
+
+/* 모바일에서 작은 패딩과 마진 */
+@media screen and (max-width: 640px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  h1, h2, h3 {
+    word-break: keep-all;
+  }
+  
+  /* 모바일에서 카드 균형 잡기 */
+  .bg-white-95 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* 햄버거 메뉴 위치 고정 */
+  .fixed-hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 300;
+  }
+}
+
+/* 반응형 컨테이너 조정 */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 그리드 시스템 강화 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .grid.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* 서비스 카드 균형 맞추기 */
+.service-card-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 아이콘 스타일 향상 */
+svg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+}

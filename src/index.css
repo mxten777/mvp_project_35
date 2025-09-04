@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 강화된 테두리 제거 */
+  div, a, button, input, section, article, nav, aside, main, header, footer {
+    border: none !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-shadow: none !important;
+  }
+
+  /* 특별히 카드 컴포넌트에 적용되는 추가 스타일 */
+  .rounded-3xl, [class*="rounded"] {
+    border: 0 !important;
+    outline: 0 !important;
+  }
+
+  /* 포커스 상태에서 강제 테두리 방지 */
+  *:focus {
+    outline: none !important;
+    border-color: transparent !important;
+  }
+}
+
+/* 백그라운드 클래스 추가 */
+.bg-white-95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
