@@ -26,7 +26,7 @@ export default function Admin() {
             <h3 id="admin-content" className="text-xl sm:text-2xl font-bold mb-4 text-orange-700">콘텐츠 관리</h3>
             <div className="flex gap-3 mb-4">
               <Button size="sm" className="bg-[#ff9800] text-white font-bold hover:bg-[#ffa726] focus-visible:ring-2 focus-visible:ring-[#ff9800] transition-colors" aria-label="새 글 작성">새 글 작성</Button>
-              <Button size="sm" variant="secondary" className="border-orange-200 text-orange-700 font-bold hover:bg-orange-50 focus-visible:ring-2 focus-visible:ring-[#ff9800] transition-colors" aria-label="삭제">삭제</Button>
+              <Button size="sm" variant="secondary" className="border-emerald-200 text-emerald-700 font-bold hover:bg-emerald-50 focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors" aria-label="삭제">삭제</Button>
             </div>
             <div className="overflow-x-auto">
               <table className="min-w-[500px] w-full border text-sm rounded-xl overflow-hidden">
@@ -39,13 +39,13 @@ export default function Admin() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr tabIndex={0} aria-label="스마트시티 소개 행" className="hover:bg-orange-50">
+                  <tr tabIndex={0} aria-label="스마트시티 소개 행" className="hover:bg-emerald-50">
                     <td className="p-3 border">스마트시티 소개</td>
                     <td className="p-3 border">admin</td>
                     <td className="p-3 border">2025-09-01</td>
                     <td className="p-3 border">게시중</td>
                   </tr>
-                  <tr tabIndex={0} aria-label="IoT 시스템 안내 행" className="hover:bg-orange-50">
+                  <tr tabIndex={0} aria-label="IoT 시스템 안내 행" className="hover:bg-emerald-50">
                     <td className="p-3 border">IoT 시스템 안내</td>
                     <td className="p-3 border">manager</td>
                     <td className="p-3 border">2025-08-20</td>
@@ -62,7 +62,7 @@ export default function Admin() {
             <h3 id="admin-banner" className="text-xl sm:text-2xl font-bold mb-4 text-orange-700">배너/팝업 관리</h3>
             <div className="flex gap-3 mb-4">
               <Button size="sm" className="bg-[#ff9800] text-white font-bold hover:bg-[#ffa726] focus-visible:ring-2 focus-visible:ring-[#ff9800] transition-colors" aria-label="배너 추가">배너 추가</Button>
-              <Button size="sm" variant="secondary" className="border-orange-200 text-orange-700 font-bold hover:bg-orange-50 focus-visible:ring-2 focus-visible:ring-[#ff9800] transition-colors" aria-label="삭제">삭제</Button>
+              <Button size="sm" variant="secondary" className="border-emerald-200 text-emerald-700 font-bold hover:bg-emerald-50 focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors" aria-label="삭제">삭제</Button>
             </div>
             <ul className="list-disc pl-6 text-orange-900 space-y-1 text-base">
               <li>메인 상단 배너 (노출중)</li>
@@ -84,12 +84,12 @@ export default function Admin() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr tabIndex={0} aria-label="admin 사용자 행" className="hover:bg-orange-50">
+                  <tr tabIndex={0} aria-label="admin 사용자 행" className="hover:bg-emerald-50">
                     <td className="p-3 border">admin</td>
                     <td className="p-3 border">최고관리자</td>
                     <td className="p-3 border">활성</td>
                   </tr>
-                  <tr tabIndex={0} aria-label="manager 사용자 행" className="hover:bg-orange-50">
+                  <tr tabIndex={0} aria-label="manager 사용자 행" className="hover:bg-emerald-50">
                     <td className="p-3 border">manager</td>
                     <td className="p-3 border">일반관리자</td>
                     <td className="p-3 border">비활성</td>

@@ -103,16 +103,16 @@ function Header() {
   }, [open]);
 
   return (
-    <header className="bg-gradient-to-r from-[#ffeb3b] via-[#fffde7] to-[#ff9800] shadow-md sticky top-0 z-40">
+  <header className="bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-50 shadow-md sticky top-0 z-40">
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between relative">
           {/* 로고 */}
-          <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl sm:text-3xl text-[#ff9800] tracking-tight z-30">
+          <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl sm:text-3xl text-emerald-600 tracking-tight z-30">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="16" fill="#ff9800" />
-              <text x="16" y="21" textAnchor="middle" fontSize="16" fill="#fff" fontWeight="bold">S</text>
+              <circle cx="16" cy="16" r="16" fill="#10b981" />
+              <text x="16" y="21" textAnchor="middle" fontSize="16" fill="#fff" fontWeight="bold">M</text>
             </svg>
-            <span className="whitespace-nowrap">스마트한</span>
+            <span className="whitespace-nowrap">엠엑스텐</span>
           </Link>
 
           {/* 데스크톱 네비게이션 */}
@@ -122,7 +122,7 @@ function Header() {
                 <li key={item.to}>
                   <Link
                     to={item.to}
-                    className="px-3 py-2 rounded-lg text-[#ff9800] hover:bg-[#ffe0b2] hover:text-[#e65100] transition-colors duration-150 text-sm md:text-base font-bold flex items-center gap-1"
+                    className="px-3 py-2 rounded-lg text-emerald-600 hover:bg-emerald-50 hover:text-emerald-900 transition-colors duration-150 text-sm md:text-base font-bold flex items-center gap-1"
                   >
                     {item.icon && <span className="hidden md:inline-block">{item.icon}</span>}
                     <span>{item.label}</span>
@@ -135,11 +135,11 @@ function Header() {
           {/* 햄버거 버튼 (모바일) */}
           <button
             ref={buttonRef}
-            className="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff9800] bg-white/90 border border-orange-100 shadow-sm transition-colors duration-200 z-30"
+            className="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-white/90 border border-emerald-100 shadow-sm transition-colors duration-200 z-30"
             aria-label={open ? "메뉴 닫기" : "메뉴 열기"}
             onClick={() => setOpen(!open)}
           >
-            <svg width="24" height="24" fill="none" stroke="#ff9800" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+            <svg width="24" height="24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
               {open ? (
                 <path d="M18 6L6 18M6 6l12 12" />
               ) : (
@@ -169,7 +169,7 @@ function Header() {
                   <li key={item.to} className="w-full">
                     <Link
                       to={item.to}
-                      className="flex items-center gap-3 w-full px-4 py-3 rounded-lg text-[#ff9800] hover:bg-[#ffe0b2] hover:text-[#e65100] transition-colors duration-150 text-base font-bold"
+                      className="flex items-center gap-3 w-full px-4 py-3 rounded-lg text-emerald-600 hover:bg-emerald-50 hover:text-emerald-900 transition-colors duration-150 text-base font-bold"
                       onClick={() => setOpen(false)}
                     >
                       {item.icon}

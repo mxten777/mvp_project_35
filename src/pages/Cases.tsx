@@ -68,9 +68,9 @@ export default function Cases() {
             </div>
             <div className="text-sm text-orange-700/90 mb-3 min-h-[36px] leading-relaxed">{c.desc}</div>
             <div className="flex flex-wrap gap-3 text-sm text-orange-700/80">
-              <span className="bg-orange-100 border border-orange-300 rounded-full px-4 py-1 font-semibold shadow-sm">{c.region}</span>
-              <span className="bg-orange-100 border border-orange-300 rounded-full px-4 py-1 font-semibold shadow-sm">{c.industry}</span>
-              <span className="bg-orange-100 border border-orange-300 rounded-full px-4 py-1 font-semibold shadow-sm">{c.solution}</span>
+              <span className="bg-emerald-100 border border-emerald-300 rounded-full px-4 py-1 font-semibold shadow-sm">{c.region}</span>
+              <span className="bg-emerald-100 border border-emerald-300 rounded-full px-4 py-1 font-semibold shadow-sm">{c.industry}</span>
+              <span className="bg-emerald-100 border border-emerald-300 rounded-full px-4 py-1 font-semibold shadow-sm">{c.solution}</span>
             </div>
           </div>
         ))}
