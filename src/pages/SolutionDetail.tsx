@@ -25,20 +25,20 @@ export default function SolutionDetail() {
 
   return (
     <section className="max-w-xl mx-auto my-16 px-2">
-      <div className="bg-gradient-to-br from-[#fffde7] via-[#fffbe7] to-[#ffe0b2] rounded-3xl shadow-xl p-8 sm:p-12 flex flex-col items-center">
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-[#ff9800] mb-7 text-center drop-shadow-sm">{detail.title}</h1>
+  <div className="bg-gradient-to-br from-[#f1f5fe] via-[#e0e7ff] to-[#bae6fd] rounded-3xl shadow-xl p-8 sm:p-12 flex flex-col items-center">
+  <h1 className="text-2xl sm:text-3xl font-extrabold text-sky-500 mb-7 text-center drop-shadow-sm">{detail.title}</h1>
         <ul className="w-full text-gray-800 text-base sm:text-lg leading-relaxed space-y-3 mb-8">
           {detail.content.trim().split('\n').filter(Boolean).map((line, i) => (
             <li key={i} className="flex items-start gap-2">
-              <span className="mt-1 text-[#ff9800] text-lg">•</span>
+              <span className="mt-1 text-sky-400 text-lg">•</span>
               <span>{line.replace(/^- /, "")}</span>
             </li>
           ))}
         </ul>
         <a
           href="/solutions"
-          className="inline-block px-8 py-2 rounded-full bg-[#ff9800] text-white font-bold shadow-md hover:bg-[#ffa726] transition-colors text-base tracking-wide no-underline focus:ring-2 focus:ring-[#ff9800] focus:outline-none"
-          style={{ boxShadow: '0 2px 8px 0 #ff980055' }}
+          className="inline-block px-8 py-2 rounded-full bg-sky-500 text-white font-bold shadow-md hover:bg-sky-400 transition-colors text-base tracking-wide no-underline focus:ring-2 focus:ring-sky-500 focus:outline-none"
+          style={{ boxShadow: '0 2px 8px 0 #38bdf855' }}
         >
           목록으로
         </a>

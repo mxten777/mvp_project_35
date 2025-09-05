@@ -7,7 +7,7 @@ const navItems = [
     label: "솔루션", 
     icon: (
       <svg width="22" height="22" fill="none">
-        <rect x="4" y="8" width="14" height="8" rx="2" fill="#ff9800"/>
+  <rect x="4" y="8" width="14" height="8" rx="2" fill="#38bdf8"/>
       </svg>
     )
   },
@@ -16,7 +16,7 @@ const navItems = [
     label: "사례", 
     icon: (
       <svg width="22" height="22" fill="none">
-        <circle cx="11" cy="11" r="10" fill="#ff9800"/>
+  <circle cx="11" cy="11" r="10" fill="#38bdf8"/>
       </svg>
     ) 
   },
@@ -25,7 +25,7 @@ const navItems = [
     label: "블로그", 
     icon: (
       <svg width="22" height="22" fill="none">
-        <rect x="4" y="6" width="14" height="10" rx="2" fill="#ff9800"/>
+  <rect x="4" y="6" width="14" height="10" rx="2" fill="#38bdf8"/>
       </svg>
     ) 
   },
@@ -34,7 +34,7 @@ const navItems = [
     label: "고객지원", 
     icon: (
       <svg width="22" height="22" fill="none">
-        <rect x="6" y="6" width="10" height="10" rx="5" fill="#ff9800"/>
+  <rect x="6" y="6" width="10" height="10" rx="5" fill="#38bdf8"/>
       </svg>
     ) 
   },
@@ -43,7 +43,7 @@ const navItems = [
     label: "소개", 
     icon: (
       <svg width="22" height="22" fill="none">
-        <rect x="6" y="6" width="10" height="10" rx="2" fill="#ff9800"/>
+  <rect x="6" y="6" width="10" height="10" rx="2" fill="#38bdf8"/>
       </svg>
     ) 
   },
@@ -52,7 +52,7 @@ const navItems = [
     label: "Admin", 
     icon: (
       <svg width="22" height="22" fill="none">
-        <rect x="4" y="8" width="14" height="6" rx="2" fill="#ff9800"/>
+  <rect x="4" y="8" width="14" height="6" rx="2" fill="#38bdf8"/>
       </svg>
     ) 
   },
@@ -103,26 +103,26 @@ function Header() {
   }, [open]);
 
   return (
-  <header className="bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-50 shadow-md sticky top-0 z-40">
+  <header className="bg-gradient-to-r from-violet-400 via-violet-200 to-violet-50 shadow-md sticky top-0 z-40">
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between relative">
           {/* 로고 */}
-          <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl sm:text-3xl text-emerald-600 tracking-tight z-30">
+          <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl sm:text-3xl text-violet-600 tracking-tight z-30">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="16" fill="#10b981" />
+              <circle cx="16" cy="16" r="16" fill="#8b5cf6" />
               <text x="16" y="21" textAnchor="middle" fontSize="16" fill="#fff" fontWeight="bold">M</text>
             </svg>
-            <span className="whitespace-nowrap">엠엑스텐</span>
+            <span className="whitespace-nowrap leading-tight">엠엑스텐</span>
           </Link>
 
           {/* 데스크톱 네비게이션 */}
           <nav className="hidden sm:block">
-            <ul className="flex items-center gap-1 md:gap-2">
+            <ul className="flex items-center gap-1 md:gap-2 leading-tight">
               {navItems.map((item) => (
                 <li key={item.to}>
                   <Link
                     to={item.to}
-                    className="px-3 py-2 rounded-lg text-emerald-600 hover:bg-emerald-50 hover:text-emerald-900 transition-colors duration-150 text-sm md:text-base font-bold flex items-center gap-1"
+                    className="px-3 py-2 rounded-lg text-violet-600 hover:bg-violet-50 hover:text-violet-900 transition-colors duration-150 text-sm md:text-base font-bold flex items-center gap-1 leading-tight"
                   >
                     {item.icon && <span className="hidden md:inline-block">{item.icon}</span>}
                     <span>{item.label}</span>
@@ -135,11 +135,11 @@ function Header() {
           {/* 햄버거 버튼 (모바일) */}
           <button
             ref={buttonRef}
-            className="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-white/90 border border-emerald-100 shadow-sm transition-colors duration-200 z-30"
+            className="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-400 bg-white/90 border border-violet-100 shadow-sm transition-colors duration-200 z-30"
             aria-label={open ? "메뉴 닫기" : "메뉴 열기"}
             onClick={() => setOpen(!open)}
           >
-            <svg width="24" height="24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+            <svg width="24" height="24" fill="none" stroke="#8b5cf6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
               {open ? (
                 <path d="M18 6L6 18M6 6l12 12" />
               ) : (
@@ -156,20 +156,20 @@ function Header() {
         {/* 모바일 네비게이션 메뉴 */}
         <div 
           ref={menuRef}
-          className={`sm:hidden fixed inset-0 bg-black/20 z-20 transition-opacity duration-300 ${
+          className={`sm:hidden fixed inset-0 bg-gradient-to-br from-violet-200 via-white to-sky-100 z-20 transition-opacity duration-300 ${
             open ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         >
-          <div className={`bg-white h-auto max-h-[90vh] overflow-y-auto w-[80%] max-w-[320px] fixed top-[60px] right-0 shadow-xl rounded-bl-2xl transition-transform duration-300 transform ${
+          <div className={`bg-gradient-to-br from-violet-100 via-white to-sky-50 h-auto max-h-[90vh] overflow-y-auto w-[80%] max-w-[320px] fixed top-[60px] right-0 shadow-xl rounded-bl-2xl transition-transform duration-300 transform ${
             open ? "translate-x-0" : "translate-x-full"
           }`}>
             <nav className="p-4">
-              <ul className="flex flex-col gap-1">
+              <ul className="flex flex-col gap-1 leading-tight">
                 {navItems.map((item) => (
                   <li key={item.to} className="w-full">
                     <Link
                       to={item.to}
-                      className="flex items-center gap-3 w-full px-4 py-3 rounded-lg text-emerald-600 hover:bg-emerald-50 hover:text-emerald-900 transition-colors duration-150 text-base font-bold"
+                      className="flex items-center gap-3 w-full px-4 py-3 rounded-lg text-violet-600 hover:bg-violet-50 hover:text-violet-900 transition-colors duration-150 text-base font-bold leading-tight"
                       onClick={() => setOpen(false)}
                     >
                       {item.icon}
