@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-  <footer className="bg-gradient-to-r from-violet-400 via-violet-200 to-violet-50 py-10 px-4 text-center text-violet-800 shadow-inner mt-16 rounded-t-3xl border-t border-violet-200">
+  <footer className="bg-gradient-to-r from-violet-400 via-violet-200 to-violet-50 py-10 px-4 text-center text-violet-800 shadow-inner mt-16 rounded-t-3xl border-t border-violet-200 bg-[url('/texture-dark.svg')] bg-repeat bg-blend-overlay animate-fadein">
   <div className="flex flex-col sm:flex-row items-center justify-between max-w-5xl mx-auto gap-8 pb-2 border-b border-sky-100">
         <div className="flex items-center gap-3">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

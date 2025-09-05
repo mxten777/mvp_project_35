@@ -9,19 +9,19 @@ export default function About() {
         <meta name="description" content="스마트한의 연혁, 인증, 파트너, 오시는 길 등 기업 정보 안내" />
       </Helmet>
       <section
-    className="container max-w-4xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0"
+    className="container max-w-4xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
         aria-labelledby="about-heading"
       >
         <h2
           id="about-heading"
-          className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight"
+          className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight glow-title animate-glow"
           tabIndex={-1}
         >
           회사소개
         </h2>
         {/* 연혁 */}
         <section className="mb-10" aria-labelledby="about-history">
-          <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7">
+          <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
             <h3 id="about-history" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">연혁</h3>
             <ul className="list-disc pl-6 text-sky-900 space-y-1 text-base leading-relaxed">
               <li>2025 스마트시티 통합 플랫폼 출시</li>
@@ -33,7 +33,7 @@ export default function About() {
         </section>
         {/* 인증 */}
         <section className="mb-10" aria-labelledby="about-cert">
-          <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7">
+          <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
             <h3 id="about-cert" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">인증 및 수상</h3>
             <ul className="list-disc pl-6 text-sky-900 space-y-1 text-base leading-relaxed">
               <li>스마트시티 우수기업 인증 (2024)</li>
@@ -44,7 +44,7 @@ export default function About() {
         </section>
         {/* 파트너 */}
         <section className="mb-10" aria-labelledby="about-partner">
-          <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7">
+          <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
             <h3 id="about-partner" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">주요 파트너</h3>
             <div className="flex flex-wrap gap-3 sm:gap-5 leading-tight">
               <span className="bg-sky-50 text-sky-500 border border-sky-200 px-5 py-2 rounded-full text-base font-semibold shadow-sm">삼성전자</span>
@@ -56,7 +56,7 @@ export default function About() {
         </section>
         {/* 오시는 길 */}
         <section aria-labelledby="about-location">
-          <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7">
+          <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
             <h3 id="about-location" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">오시는 길</h3>
             <p className="text-sky-900 mb-3 text-base font-semibold leading-relaxed">경기도 수원시 영통구 광교로 156, 스마트한타워 8층</p>
             <iframe

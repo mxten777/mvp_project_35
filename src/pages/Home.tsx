@@ -15,12 +15,12 @@ function Home() {
         <meta property="og:description" content="스마트한의 주차, IoT, 영상 통합 스마트시티 솔루션" />
       </Helmet>
       <section
-    className="container max-w-5xl mx-auto py-8 sm:py-14 px-4 sm:px-8 text-center bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-xl mt-6 mb-10 border-0"
+    className="container max-w-5xl mx-auto py-8 sm:py-14 px-4 sm:px-8 text-center bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-xl mt-6 mb-10 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
         aria-labelledby="main-heading"
       >
         <h1
           id="main-heading"
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 tracking-tight text-sky-500 drop-shadow leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 tracking-tight text-sky-500 drop-shadow leading-tight glow-title animate-glow"
           tabIndex={-1}
         >
           <span className="inline-block bg-gradient-to-r from-sky-500 to-sky-300 bg-clip-text text-transparent">Total Solution for Smart City</span>
@@ -33,7 +33,7 @@ function Home() {
           role="list"
           aria-label="스마트한 주요 서비스"
         >
-          <div className="bg-white rounded-xl shadow-sm ring-1 ring-sky-100 border-0 outline-none p-4 flex flex-col items-center min-h-[280px] transition-all duration-200 hover:shadow-md hover:-translate-y-1" style={{ border: 'none !important', outline: 'none !important' }}>
+          <div className="bg-white rounded-xl shadow-neo ring-1 ring-sky-100 border-0 outline-none p-4 flex flex-col items-center min-h-[280px] transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group" style={{ border: 'none !important', outline: 'none !important' }}>
             <ServiceCard
               icon={ServiceIcons.parking}
               title="통합 주차 보안 시스템"
@@ -48,7 +48,7 @@ function Home() {
               </a>
             </ServiceCard>
           </div>
-          <div className="bg-white rounded-xl shadow-sm ring-1 ring-orange-100 border-0 outline-none p-4 flex flex-col items-center min-h-[280px] transition-all duration-200 hover:shadow-md hover:-translate-y-1" style={{ border: 'none !important', outline: 'none !important' }}>
+          <div className="bg-white rounded-xl shadow-neo ring-1 ring-sky-100 border-0 outline-none p-4 flex flex-col items-center min-h-[280px] transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group" style={{ border: 'none !important', outline: 'none !important' }}>
             <ServiceCard
               icon={ServiceIcons.iot}
               title="IoT 모니터링 시스템"

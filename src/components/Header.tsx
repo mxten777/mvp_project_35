@@ -6,7 +6,7 @@ const navItems = [
     to: "/solutions", 
     label: "솔루션", 
     icon: (
-      <svg width="22" height="22" fill="none">
+      <svg width="22" height="22" fill="none" className="drop-shadow-glow animate-glow">
   <rect x="4" y="8" width="14" height="8" rx="2" fill="#38bdf8"/>
       </svg>
     )
@@ -15,7 +15,7 @@ const navItems = [
     to: "/cases", 
     label: "사례", 
     icon: (
-      <svg width="22" height="22" fill="none">
+      <svg width="22" height="22" fill="none" className="drop-shadow-glow animate-glow">
   <circle cx="11" cy="11" r="10" fill="#38bdf8"/>
       </svg>
     ) 
@@ -24,7 +24,7 @@ const navItems = [
     to: "/blog", 
     label: "블로그", 
     icon: (
-      <svg width="22" height="22" fill="none">
+      <svg width="22" height="22" fill="none" className="drop-shadow-glow animate-glow">
   <rect x="4" y="6" width="14" height="10" rx="2" fill="#38bdf8"/>
       </svg>
     ) 
@@ -33,7 +33,7 @@ const navItems = [
     to: "/support", 
     label: "고객지원", 
     icon: (
-      <svg width="22" height="22" fill="none">
+      <svg width="22" height="22" fill="none" className="drop-shadow-glow animate-glow">
   <rect x="6" y="6" width="10" height="10" rx="5" fill="#38bdf8"/>
       </svg>
     ) 

@@ -3,12 +3,12 @@ import ServiceCard, { ServiceIcons } from "../components/ServiceCard";
 export default function Solutions() {
   return (
     <section
-    className="container max-w-5xl mx-auto py-12 sm:py-20 px-2 sm:px-8 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-16 border-0"
+    className="container max-w-5xl mx-auto py-12 sm:py-20 px-2 sm:px-8 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-16 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
       aria-labelledby="solutions-heading"
     >
       <h2
         id="solutions-heading"
-        className="text-4xl sm:text-5xl font-extrabold mb-14 text-center tracking-tight text-sky-500 drop-shadow leading-tight"
+        className="text-4xl sm:text-5xl font-extrabold mb-14 text-center tracking-tight text-sky-500 drop-shadow leading-tight glow-title animate-glow"
         tabIndex={-1}
       >
         스마트한 주요 솔루션
@@ -18,7 +18,7 @@ export default function Solutions() {
         role="list"
         aria-label="스마트한 솔루션 카드"
       >
-  <div className="bg-white-95 rounded-3xl shadow-xl ring-2 ring-sky-100 border-0 flex-1 min-w-[220px] flex flex-col items-center p-10 sm:p-12 transition-all duration-200" style={{ border: 'none !important' }}>
+  <div className="bg-white-95 rounded-3xl shadow-neo ring-2 ring-sky-100 border-0 flex-1 min-w-[220px] flex flex-col items-center p-10 sm:p-12 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group" style={{ border: 'none !important' }}>
           <ServiceCard
             icon={ServiceIcons.parking}
             title="통합 주차 보안 시스템"
@@ -33,7 +33,7 @@ export default function Solutions() {
             </a>
           </ServiceCard>
         </div>
-  <div className="bg-white/95 rounded-3xl shadow-xl ring-2 ring-sky-100/40 !border-0 flex-1 min-w-[220px] flex flex-col items-center p-10 sm:p-12 transition-all duration-200" style={{ border: 'none !important' }}>
+  <div className="bg-white/95 rounded-3xl shadow-neo ring-2 ring-sky-100/40 !border-0 flex-1 min-w-[220px] flex flex-col items-center p-10 sm:p-12 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group" style={{ border: 'none !important' }}>
           <ServiceCard
             icon={ServiceIcons.iot}
             title="IoT 모니터링 시스템"
@@ -48,7 +48,7 @@ export default function Solutions() {
             </a>
           </ServiceCard>
         </div>
-  <div className="bg-white/95 rounded-3xl shadow-xl ring-2 ring-sky-100/40 !border-0 flex-1 min-w-[220px] flex flex-col items-center p-10 sm:p-12 transition-all duration-200" style={{ border: 'none !important' }}>
+  <div className="bg-white/95 rounded-3xl shadow-neo ring-2 ring-sky-100/40 !border-0 flex-1 min-w-[220px] flex flex-col items-center p-10 sm:p-12 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group" style={{ border: 'none !important' }}>
           <ServiceCard
             icon={ServiceIcons.cctv}
             title="영상 통합 시스템"

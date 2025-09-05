@@ -10,7 +10,7 @@ export default function Admin() {
         <meta name="description" content="콘텐츠, 배너, 사용자권한 등 관리자 기능" />
       </Helmet>
       <section
-        className="container max-w-4xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0"
+        className="container max-w-4xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
         aria-labelledby="admin-heading"
       >
         {/* 샘플 알림/경고 메시지 */}
@@ -33,15 +33,15 @@ export default function Admin() {
         </div>
         <h2
           id="admin-heading"
-          className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight"
+          className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight glow-title animate-glow"
           tabIndex={-1}
         >
           관리자(Admin)
         </h2>
         {/* 콘텐츠 관리 */}
         <section className="mb-10" aria-labelledby="admin-content">
-          <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7">
-            <h3 id="admin-content" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">콘텐츠 관리</h3>
+          <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
+            <h3 id="admin-content" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700 glow-title">콘텐츠 관리</h3>
             <p className="mb-3 text-sky-500 text-sm leading-relaxed">게시글 등록, 수정, 삭제 및 카테고리 관리가 가능합니다. 여러 게시글을 선택해 일괄 삭제할 수 있습니다.</p>
             <div className="flex gap-3 mb-4">
               <Button size="sm" className="bg-sky-500 text-white font-bold hover:bg-sky-400 focus-visible:ring-2 focus-visible:ring-sky-500 transition-colors" aria-label="새 글 작성" title="새로운 게시글을 등록합니다.">새 글 작성</Button>
@@ -89,8 +89,8 @@ export default function Admin() {
         </section>
       {/* 시스템 사용자 활동/접속 통계 샘플 */}
       <section className="mb-10" aria-labelledby="admin-user-stats">
-        <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7">
-          <h3 id="admin-user-stats" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">사용자 활동 및 접속 통계</h3>
+  <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
+          <h3 id="admin-user-stats" className="text-xl sm:text-2xl font-bold mb-4 text-sky-700 glow-title">사용자 활동 및 접속 통계</h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
             <div className="bg-sky-50 rounded-lg p-4 text-center">
               <div className="text-2xl font-bold text-sky-700">1,245</div>

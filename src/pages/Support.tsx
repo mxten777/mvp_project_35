@@ -2,12 +2,12 @@
 export default function Support() {
   return (
     <section
-    className="container max-w-2xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0"
+    className="container max-w-2xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
       aria-labelledby="support-heading"
     >
       <h2
     id="support-heading"
-  className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight"
+  className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight glow-title animate-glow"
     tabIndex={-1}
   >
         고객지원
@@ -15,7 +15,7 @@ export default function Support() {
       <div className="mb-12">
   <h3 className="text-xl sm:text-2xl font-bold mb-4 text-sky-700">1:1 문의</h3>
         <form
-          className="flex flex-col gap-5 bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7 leading-relaxed"
+          className="flex flex-col gap-5 bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 leading-relaxed transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group"
           aria-label="1:1 문의 폼"
         >
           <label htmlFor="support-name" className="sr-only">이름</label>
@@ -54,7 +54,7 @@ export default function Support() {
         </form>
       </div>
       <div className="mb-12">
-  <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7 flex flex-col gap-2">
+  <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 flex flex-col gap-2 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
           <h3 className="text-xl sm:text-2xl font-bold mb-2 text-sky-700">유지보수 신청</h3>
           <p className="text-sky-700 text-base leading-relaxed">
             유지보수 및 기술지원이 필요하신 경우<br />
@@ -65,7 +65,7 @@ export default function Support() {
         </div>
       </div>
       <div>
-  <div className="bg-white/95 rounded-2xl shadow-lg border border-sky-100 p-7 flex flex-col gap-2">
+  <div className="bg-white/95 rounded-2xl shadow-neo border border-sky-100 p-7 flex flex-col gap-2 transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group">
           <h3 className="text-xl sm:text-2xl font-bold mb-2 text-sky-700">원격지원 안내</h3>
           <p className="text-sky-700 text-base leading-relaxed">
             원격지원이 필요하신 경우 담당자 안내에 따라<br />
