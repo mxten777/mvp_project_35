@@ -9,13 +9,13 @@ const CATEGORIES = ["전체", "뉴스", "사례", "기술"];
 export default function Blog() {
   // TODO: 실제 검색/필터링 로직 구현 예정
   return (
-    <section
-    className="container max-w-3xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
+  <section
+  className="container max-w-3xl mx-auto py-12 sm:py-20 px-2 sm:px-6 bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-2xl mt-8 mb-12 border-0"
       aria-labelledby="blog-heading"
     >
       <h2
         id="blog-heading"
-        className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight glow-title animate-glow"
+        className="text-3xl sm:text-4xl font-extrabold mb-12 text-center tracking-tight text-sky-500 drop-shadow leading-tight"
         tabIndex={-1}
       >
         블로그 & 뉴스
@@ -50,7 +50,7 @@ export default function Blog() {
         {POSTS.map((post, i) => (
           <div
             key={i}
-            className="group flex flex-col gap-4 p-7 rounded-3xl bg-white/95 shadow-neo border border-sky-100 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] transition-all duration-300 min-h-[180px] focus-within:ring-2 focus-within:ring-sky-500 cursor-pointer"
+            className="group flex flex-col gap-4 p-7 rounded-3xl bg-white/95 shadow-md border border-sky-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 min-h-[180px] focus-within:ring-2 focus-within:ring-sky-500 cursor-pointer"
             tabIndex={0}
             aria-label={`${post.title} 블로그 카드`}
           >

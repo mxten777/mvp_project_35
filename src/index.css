@@ -32,35 +32,20 @@
 }
 
 /* 2025 트렌드 커스텀 유틸리티 */
+/* === 가독성 중심 최적화: 트렌드 효과 최소화 === */
 .glow-title {
-  text-shadow: 0 0 8px #38bdf8cc, 0 0 16px #6366f1aa;
+  /* text-shadow: 0 0 8px #38bdf8cc, 0 0 16px #6366f1aa; */
+  text-shadow: none;
 }
 .drop-shadow-glow {
-  filter: drop-shadow(0 0 8px #6366f1cc) drop-shadow(0 0 2px #38bdf8cc);
+  /* filter: drop-shadow(0 0 8px #6366f1cc) drop-shadow(0 0 2px #38bdf8cc); */
+  filter: none;
 }
-.shadow-neo {
-  box-shadow: 0 4px 24px 0 #6366f122, 0 1.5px 4px 0 #38bdf822;
+.shadow-neo, .shadow-neo-lg, .shadow-neo-icon, .shadow-neo-icon-lg {
+  /* box-shadow: ... */
+  box-shadow: 0 2px 8px 0 #e0e7ef33;
 }
-.shadow-neo-lg {
-  box-shadow: 0 8px 32px 0 #6366f144, 0 3px 8px 0 #38bdf844;
+.animate-fadein, .animate-glow {
+  animation: none;
 }
-.shadow-neo-icon {
-  box-shadow: 0 2px 8px 0 #6366f133, 0 1px 2px 0 #38bdf822;
-}
-.shadow-neo-icon-lg {
-  box-shadow: 0 4px 16px 0 #6366f155, 0 2px 4px 0 #38bdf844;
-}
-.animate-fadein {
-  animation: fadein 1.2s cubic-bezier(0.4,0,0.2,1);
-}
-@keyframes fadein {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: none; }
-}
-.animate-glow {
-  animation: glowPulse 2.5s infinite alternate cubic-bezier(0.4,0,0.2,1);
-}
-@keyframes glowPulse {
-  from { filter: drop-shadow(0 0 0 #6366f1cc); }
-  to { filter: drop-shadow(0 0 12px #6366f1cc) drop-shadow(0 0 4px #38bdf8cc); }
-}
+

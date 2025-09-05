@@ -15,7 +15,7 @@ function Home() {
         <meta property="og:description" content="스마트한의 주차, IoT, 영상 통합 스마트시티 솔루션" />
       </Helmet>
       <section
-    className="container max-w-5xl mx-auto py-8 sm:py-14 px-4 sm:px-8 text-center bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-xl mt-6 mb-10 border-0 bg-[url('/texture-light.svg')] bg-repeat bg-blend-overlay animate-fadein"
+    className="container max-w-5xl mx-auto py-8 sm:py-14 px-4 sm:px-8 text-center bg-gradient-to-br from-violet-50 via-white to-sky-50 rounded-3xl shadow-xl mt-6 mb-10 border-0"
         aria-labelledby="main-heading"
       >
         <h1
@@ -39,13 +39,7 @@ function Home() {
               title="통합 주차 보안 시스템"
               description="IoT 기반 입·출차, 민원 제로, 통합 관리 지원"
             >
-              <a
-                href="/solutions/parking"
-                className="mt-4 inline-block px-5 py-2 rounded-full bg-sky-500 text-white font-bold shadow-sm hover:bg-sky-400 transition-all text-sm sm:text-base no-underline focus:ring-2 focus:ring-sky-500 focus:outline-none border-0"
-                style={{ boxShadow: '0 2px 6px 0 #38bdf844', border: 'none !important' }}
-              >
-                상세보기
-              </a>
+        {/* h2/h3 등은 glow-title, animate-glow 제거 */}
             </ServiceCard>
           </div>
           <div className="bg-white rounded-xl shadow-neo ring-1 ring-sky-100 border-0 outline-none p-4 flex flex-col items-center min-h-[280px] transition-all duration-300 hover:shadow-neo-lg hover:-translate-y-1 hover:scale-[1.03] group" style={{ border: 'none !important', outline: 'none !important' }}>
