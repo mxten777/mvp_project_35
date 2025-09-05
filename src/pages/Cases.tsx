@@ -2,7 +2,7 @@
 const CASES = [
   { title: "S-oil 주유소", region: "수원", industry: "주유소", solution: "주차관제", desc: "대형 주유소의 효율적 주차관제 시스템 구축" },
   { title: "아르누보호텔", region: "강남", industry: "호텔", solution: "주차관제", desc: "호텔 고객을 위한 스마트 주차 솔루션 적용" },
-  { title: "제주공항 ROT", region: "제주", industry: "공항", solution: "IoT", desc: "공항 내 IoT 기반 통합 관제 시스템" },
+  { title: "제주공항 IoT", region: "제주", industry: "공항", solution: "IoT", desc: "공항 내 IoT 기반 통합 관제 시스템" },
   { title: "성복스퀘어", region: "용인", industry: "상가", solution: "CCTV", desc: "상가 보안 강화를 위한 CCTV 설치 및 운영" },
 ];
 
